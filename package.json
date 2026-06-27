@@ -1,0 +1,27 @@
+{
+  "name": "ts-form-gen",
+  "version": "1.0.0",
+  "description": "CLI tool to generate Angular Reactive Form groups, value types, and test factories",
+  "author": "Rob",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.ts",
+  "bin": {
+    "ts-form-gen": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev":     "bun run src/index.ts",
+    "build":   "bun build src/index.ts --outdir dist --target node --banner '#!/usr/bin/env node'",
+    "prepare": "bun run build",
+    "start":   "node dist/index.js"
+  },
+  "keywords": ["angular", "reactive-forms", "code-generator", "cli", "formgroup"],
+  "dependencies": {},
+  "devDependencies": {}
+}
